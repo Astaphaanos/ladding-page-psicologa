@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <section className="h-auto flex flex-col justify-center items-center">
+        <section className="h-auto flex flex-col justify-center items-center" id="servicos-oferecidos">
             <div>
                 <h2 className="text-3xl font-bold text-[#494949] pt-20">Serviços Oferecidos</h2>
             </div>
@@ -23,24 +23,24 @@ const Banner = () => {
             </div>
 
             <div className="flex justify-between items-center bg-[#ececec] mt-20 w-full p-10 text-center">
-                <div className="pr-10 w-1/2">
+                <div className="pr-8 w-3xs">
                     <h4 className="pb-2 font-semibold text-xl">Tudo online por videochamada</h4>
-                    <p>Tudo online, por videochamada.</p>
+                    <p>No conforto da sua casa, se encaixando com sua rotina</p>
                 </div>
 
-                <div className="pr-10 w-1/2">
+                <div className="pr-10 w-3xs">
                     <h4 className="pb-2 font-semibold text-xl">Terapia Presencial</h4>
                     <p>Atendimento presencial em um ambiente acolhedor e confortável</p>
                 </div>
 
-                <div className="pr-10 w-1/2">
+                <div className="pr-10 w-3xs">
                     <h4  className="pb-2 font-semibold text-xl">Sigilo completo</h4>
                     <p>Garantia de total privacidade e confidencialidade em todas as sessões</p>
                 </div>
 
-                <div className="pr-10 w-1/2">
+                <div className="pr-10 w-3xs">
                     <h4 className="pb-2 font-semibold text-xl">Profissional certificada</h4>
-                    <p>Psicóloga com formação e certificação reconhecida</p>
+                    <p>Psicóloga formada e certificação reconhecida</p>
                 </div>
             </div>
         </section>

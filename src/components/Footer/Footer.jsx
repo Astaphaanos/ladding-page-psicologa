@@ -1,47 +1,74 @@
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-
-//Arrumar o footer
+import ShowMapa from "../ConsultorioLocalizacao/ShowMapa";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center h-48 p-10 bg-gradient-to-r from-[#6e2427] via-[#9e3438] to-[#c44a4e] text-white">
-      <div className="text-3xl font-bold pr-16">
-        <span className="pr-20">Thayse Oliveira</span>
+    <footer className="h-auto p-10 bg-gradient-to-r from-[#6e2427] via-[#9e3438] to-[#c44a4e] text-white" id='contatos-info'>
+      <div className="flex items-center justify-between ">
+        <div className="text-3xl font-bold pr-16 w-[380px]">
+          <img src="/src/assets/logo-psi.png" alt="Logo de Thayse Oliveira" />
+        </div>
+
+        <div className="flex flex-col items-center">
+          <div className="pb-8">
+            <ul className="flex justify-between">
+              <li>
+                <a href="#sobre-mim" className="pr-24">
+                  Sobre mim
+                </a>
+              </li>
+              <li>
+                <a href="#como-funciona-atendimento" className="pr-24">
+                  Como funciona
+                </a>
+              </li>
+              <li>
+                <a href="#servicos-oferecidos" className="pr-24">
+                  Serviços Oferecidos
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex items-center pr-22">
+            <div className="flex items-center pr-12">
+              <FaWhatsapp />
+              <p className="pl-2">WhatsApp: (87) 998186712</p>
+            </div>
+            <div className="flex items-center">
+              <FaInstagram />
+              <p className="pl-2">
+                <a href="https://www.instagram.com/thaysepsi2/" target="_blank">@thaysepsi</a> {/*Colocar o link do instagram */}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <ShowMapa />
+
+          {/* Endereço e Link */}
+          <div className="mt-4 text-center">
+            <p className="mb-2">Avenida Ézio Araújo, 149 - Sala 456</p>
+            {/*//! Mudar a sala */}
+            <p className="mb-4">Centro - Pesqueira/PE</p>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <div className="pt-10">
-            <ul className="flex items-center text-[#fefefe] list-none">
-                <li className="pr-20">
-                  <a href="">
-                    Sobre mim
-                  </a>
-                </li>
-                <li className="pr-20">
-                  <a href="">
-                    Como funciona
-                  </a>
-                </li>
-                <li className="pr-20">
-                  <a href="">
-                    Entre em Contato
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-        <div className="flex items-center pt-10">
-        <div  className="flex items-center">
-                <FaWhatsapp />
-                <p className="pl-1">Whatsapp: (87) 998186712</p>
-            </div>
-
-            <div  className="flex items-center pl-5">
-                <FaInstagram />
-                <p className="pl-1">@thaysepsi</p>
-            </div>
-        </div>
+      <div className="mt-4 pt-4 border-t w-full border-gray-200 text-center text-sm">
+        <p>
+          © 2025 Todos os direitos reservado. Desenvolvido por{" "}
+          <a
+            href="https://www.linkedin.com/in/anna-clara-amorim/"
+            target="_blank"
+            className="font-semibold hover:underline"
+          >
+            {" "}
+            Clara Amorim
+          </a>
+        </p>
       </div>
     </footer>
   );

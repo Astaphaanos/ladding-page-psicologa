@@ -3,7 +3,7 @@ import BtnWhats from "../BtnWhats/BtnWhats";
 
 const FuncionaAtendimento = () => {
     return (
-        <section className="flex flex-col justify-center items-center h-screen text-center">
+        <section className="flex flex-col justify-center items-center h-screen text-center" id="como-funciona-atendimento">
             <div>
                 <h2 className="font-bold text-4xl text-[#494949] pb-4">Como funciona o atendimento?</h2>
                 <p className="text-[18px] text-[#494949]">Conheça as etapas do processo</p>
@@ -15,11 +15,11 @@ const FuncionaAtendimento = () => {
                 </div>
 
                 <div className="bg-gradient-to-b from-[#9e3438] to-[#c44a4e] p-7 rounded-2xl font-semibold">
-                    <h3>Você contará sua demanda e irei te explicar como funciona a terapia</h3>
+                    <h3>Contará sua demanda e irei te explicar como funciona o processo terapêutico</h3>
                 </div>
 
                 <div className="bg-gradient-to-b from-[#9e3438] to-[#c44a4e] p-7 rounded-2xl font-semibold">
-                    <h3>As sessões serão semanais com duração de 40 minutos</h3>
+                    <h3>As sessões serão semanais com duração de 50 minutos</h3>
                 </div>
             </div>
 
