@@ -1,24 +1,39 @@
 import BtnWhats from "../BtnWhats/BtnWhats";
 
 const Home = () => {
-    return(
-        <section className="h-screen w-full mx-auto flex justify-center items-center">
-            <div className="flex items-center justify-evenly">
-                <div className="pr-20 w-1/2">
-                    <h1 className="font-bold text-4xl text-[#494949]">
-                        Atendimento psicológico online e presencial para <span className="text-[#9e3438]">infantojuvenil e adultos</span>
-                    </h1>
-                    <p className="pt-3 text-[#494949]">
-                        Atendimento presencial em Pesqueira-PE e online no Brasil todo
-                    </p>
-                    <BtnWhats/>
-                </div>
-                <div>
-                    <img src="/src/assets/site.jpeg" alt="Foto da Psicólogo" className="w-96 rounded-3xl"/>
-                </div>
+    return (
+      <section className="h-screen w-full mx-auto flex justify-center items-center bg-gray-50 px-4">
+        <div className="flex flex-col md:flex-row items-center justify-evenly w-full max-w-6xl gap-8">
+          {/* Text Content */}
+          <div className="md:pr-10 w-full md:w-1/2 space-y-6 animate-fade-in">
+            <h1 className="font-bold text-3xl md:text-4xl text-gray-800 leading-tight">
+              Atendimento psicológico online e presencial para{" "}
+              <span className="text-red-800 decoration-2 underline-offset-4 animate-underline">
+                infantojuvenil e adultos
+              </span>
+            </h1>
+  
+            <p className="text-gray-600 text-lg">
+              Atendimento presencial em Pesqueira-PE e online no Brasil todo
+            </p>
+  
+            <div className="pt-4">
+              <BtnWhats />
             </div>
-        </section>
-    )
-}
-
-export default Home;
+          </div>
+  
+          {/* Image */}
+          <div className="relative group">
+            <img
+              src="/src/assets/site.jpeg"
+              alt="Foto da Psicóloga"
+              className="w-64 sm:w-80 md:w-96 rounded-3xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 cursor-pointer"
+            />
+            <div className="absolute -z-10 w-full h-full bg-red-800/10 rounded-3xl top-2 left-2 group-hover:top-3 group-hover:left-3 transition-all duration-300" />
+          </div>
+        </div>
+      </section>
+    );
+  };
+  
+  export default Home;

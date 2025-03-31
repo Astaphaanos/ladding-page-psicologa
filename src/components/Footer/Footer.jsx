@@ -11,27 +11,27 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="pb-8">
+          <div className="pb-16 text-[18px]">
             <ul className="flex justify-between">
               <li>
-                <a href="#sobre-mim" className="pr-24">
+                <a href="#sobre-mim" className="pr-24 hover:underline">
                   Sobre mim
                 </a>
               </li>
               <li>
-                <a href="#como-funciona-atendimento" className="pr-24">
+                <a href="#como-funciona-atendimento" className="pr-24 hover:underline">
                   Como funciona
                 </a>
               </li>
               <li>
-                <a href="#servicos-oferecidos" className="pr-24">
+                <a href="#servicos-oferecidos" className="pr-24 hover:underline">
                   Serviços Oferecidos
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="flex items-center pr-22">
+          <div className="flex items-center pr-24">
             <div className="flex items-center pr-12">
               <FaWhatsapp />
               <p className="pl-2">WhatsApp: (87) 998186712</p>
@@ -49,15 +49,14 @@ const Footer = () => {
           <ShowMapa />
 
           {/* Endereço e Link */}
-          <div className="mt-4 text-center">
-            <p className="mb-2">Avenida Ézio Araújo, 149 - Sala 456</p>
-            {/*//! Mudar a sala */}
-            <p className="mb-4">Centro - Pesqueira/PE</p>
+          <div className="mt-4 text-center font-semibold">
+            <p className="mb-1">Avenida Ézio Araújo, 149</p>
+            <p className="mb-4">Centro | Pesqueira-PE</p>
           </div>
         </div>
       </div>
 
-      <div className="mt-4 pt-4 border-t w-full border-gray-200 text-center text-sm">
+      <div className="mt-2 pt-2 border-t w-full border-gray-200 text-center text-sm">
         <p>
           © 2025 Todos os direitos reservado. Desenvolvido por{" "}
           <a

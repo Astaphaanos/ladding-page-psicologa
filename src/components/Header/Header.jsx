@@ -11,13 +11,16 @@ const Header = () => {
                 <div>
                     <ul className="flex justify-between text-md text-neutral-700">
                         <li>
-                            <a href="#sobre-mim" className="pr-8">Sobre mim</a>
+                            <a href="#sobre-mim" className="pr-8 hover:text-neutral-950">Sobre mim</a>
                         </li>
                         <li>
-                            <a href="#como-funciona-atendimento" className="pr-8">Como funciona</a>
+                            <a href="#servicos-oferecidos" className="pr-8 hover:text-neutral-950">Serviços</a>
                         </li>
                         <li>
-                            <a href="#contatos-info" className="pr-8">Entre em Contato</a>
+                            <a href="#como-funciona-atendimento" className="pr-8 hover:text-neutral-950">Como funciona</a>
+                        </li>
+                        <li>
+                            <a href="#contatos-info" className="pr-8 hover:text-neutral-950">Entre em Contato</a>
                         </li>
                         <li className="font-bold">
                             CRP- 02/29522
