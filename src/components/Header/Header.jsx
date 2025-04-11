@@ -2,30 +2,30 @@
 
 const Header = () => {
     return(
-        <header className="flex justify-center p-6">
-            <nav className="flex justify-between items-center">
-                <div className="text-3xl font-bold pr-16 text-[#9e3438]">
+        <header className="pt-4 h-2">
+            <nav className="flex justify-around items-center md:justify-between lg:justify-evenly xl:justify-evenly">
+                <div className="text-red-800 font-bold text-3xl md:pl-4">
                     <span>Thayse Oliveira</span>
                 </div>
 
-                <div>
-                    <ul className="flex justify-between text-md text-neutral-700">
-                        <li>
-                            <a href="#sobre-mim" className="pr-8 hover:text-neutral-950">Sobre mim</a>
+                <div className="flex items-center">
+                    <ul className="hidden md:flex md:text-sm md:w-full lg:text-[16px]">
+                        <li className="md:pr-4 lg:pr-6 hover:text-gray-950">
+                            <a href="#sobre-mim" className="">Sobre mim</a>
                         </li>
-                        <li>
-                            <a href="#servicos-oferecidos" className="pr-8 hover:text-neutral-950">Serviços</a>
+                        <li className="md:pr-4 lg:pr-6 hover:text-gray-950">
+                            <a href="#servicos-oferecidos" className="">Serviços</a>
                         </li>
-                        <li>
-                            <a href="#como-funciona-atendimento" className="pr-8 hover:text-neutral-950">Como funciona</a>
+                        <li className="md:pr-4 lg:pr-6 hover:text-gray-950">
+                            <a href="#como-funciona-atendimento" className="">Como funciona</a>
                         </li>
-                        <li>
-                            <a href="#contatos-info" className="pr-8 hover:text-neutral-950">Entre em Contato</a>
-                        </li>
-                        <li className="font-bold">
-                            CRP- 02/29522
+                        <li className="md:pr-4 lg:pr-6 hover:text-gray-950">
+                            <a href="#contatos-info" className="">Entre em Contato</a>
                         </li>
                     </ul>
+                    <span className=" text-gray-700 font-bold md:text-sm lg:pl-6">
+                        CRP-02/29522
+                    </span>
                 </div>
                 <div>
                 
