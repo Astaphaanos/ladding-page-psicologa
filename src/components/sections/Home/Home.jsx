@@ -28,7 +28,7 @@ const Home = () => {
           {/* Image */}
           <div className="relative group order-1 md:order-2 sm:pb-6">
             <img
-              src="/src/assets/.psifoto.png"
+              src="/src/assets/psifoto.png"
               alt="Foto da Psicóloga"
               className="w-64 sm:w-80 md:w-96 rounded-3xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 cursor-pointer"
             />
