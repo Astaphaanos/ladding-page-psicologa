@@ -80,7 +80,7 @@ const servicesBanner = [
 
 const Banner = () => {
   return (
-    <AnimatedSection >
+    <AnimatedSection type="default" delay={0.3}>
     <section
       className="h-auto flex flex-col justify-center items-center"
       id="servicos-oferecidos"

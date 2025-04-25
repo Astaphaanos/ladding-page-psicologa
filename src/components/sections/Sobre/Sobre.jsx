@@ -3,7 +3,7 @@ import AnimatedSection from "../../common/AnimatedSection/AnimatedSection";
 
 const Sobre = () => {
     return (
-        <AnimatedSection >
+        <AnimatedSection type="default" delay={0.3}>
         <section className="bg-[#9e3438] text-white p-10 h-auto" id="sobre-mim">
             <div className="flex flex-col items-center justify-center">
                 <h2 className="text-3xl font-bold p-2">Sobre Mim</h2>

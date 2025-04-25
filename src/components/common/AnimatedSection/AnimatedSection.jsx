@@ -15,35 +15,36 @@ export default function AnimatedSection({
 
   useEffect(() => {
     // Garantir que o elemento existe
-    if (!ref.current) return
+    const element = ref.current;
+    if (!element) return;
 
     // Configuração básica de animação
-    gsap.from(ref.current, {
+    const animation = gsap.from(element, {
       opacity: 0,
       y: 50,
       duration: 3,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ref.current,
+        trigger: element,
         start: "top 80%",
         toggleActions: "play none none none",
-        markers: false // Ative como true para debug
+        markers: false
       },
-      // Força renderização inicial
       immediateRender: false
-    })
+    });
+
 
     return () => {
-      // Limpeza
-      gsap.killTweensOf(ref.current)
-      ScrollTrigger.getAll().forEach(st => st.kill())
-    }
-  }, [sectionType])
+      animation?.scrollTrigger?.kill();
+      gsap.killTweensOf(element);
+    };
+  }, [sectionType]);
 
+ 
   return (
     <div 
       ref={ref}
-      style={{ opacity: 1 }} // Estado inicial visível
+      style={{ opacity: 1 }}
       className="will-change-transform"
     >
       {children}

@@ -4,13 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
-    background: linear-gradient(#f9f9f9, #f0f0f0);
-    scroll-behavior: smooth;
-}
-[data-animation-type] {
-  opacity: 0;
-  transform: translateY(20px);
+body {
+  background: linear-gradient(#f9f9f9, #f0f0f0);
 }
 
 @keyframes fadeIn {

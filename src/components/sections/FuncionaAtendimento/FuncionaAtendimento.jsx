@@ -3,7 +3,7 @@ import BtnWhats from '../../common/BtnWhats/BtnWhats'
 
 const FuncionaAtendimento = () => {
     return (
-        <AnimatedSection>
+        <AnimatedSection type="default" delay={0.3}>
         <section className="flex flex-col justify-center items-center h-screen text-center" id="como-funciona-atendimento">
             <div>
                 <h2 className="font-bold text-3xl text-[#494949] pb-4">Como funciona o atendimento?</h2>

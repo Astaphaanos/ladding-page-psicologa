@@ -3,7 +3,7 @@ import AnimatedSection from "../../common/AnimatedSection/AnimatedSection";
 
 const Home = () => {
     return (
-      <AnimatedSection >
+      <AnimatedSection type="default" delay={0.3}>
       <section className="h-screen w-full mx-auto flex justify-center items-center bg-gray-50 px-4">
         
         <div className="flex flex-col md:flex-row items-center justify-evenly w-full max-w-6xl gap-8">
