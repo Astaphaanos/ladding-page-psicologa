@@ -1,9 +1,13 @@
 import BtnWhats from "../BtnWhats/BtnWhats";
+import SectionObserver from "../IntersectionObserver/IntersectionObserver";
 
 const Home = () => {
     return (
+      <SectionObserver>
       <section className="h-screen w-full mx-auto flex justify-center items-center bg-gray-50 px-4">
+        
         <div className="flex flex-col md:flex-row items-center justify-evenly w-full max-w-6xl gap-8">
+          
           {/* Text Content */}
           <div className="md:pr-10 w-full md:w-1/2 space-y-6 animate-fade-in order-2 md:order-1">
             <h1 className="font-bold text-2xl md:text-4xl text-gray-800 leading-tight lg:text-3xl">
@@ -33,6 +37,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+    </SectionObserver>
     );
   };
   
