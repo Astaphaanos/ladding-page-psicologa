@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     background: linear-gradient(#f9f9f9, #f0f0f0);
+    scroll-behavior: smooth;
+}
+[data-animation-type] {
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 @keyframes fadeIn {
@@ -46,41 +51,3 @@ body {
     background-color: #9e3438;
     animation: underline 1s ease-out;
   }
-
-/* ===== ANIMAÇÕES DE SEÇÃO ===== */
-/* Transição padrão (fade + subida suave) */
-.section-transition {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 
-    opacity 0.6s ease-out,
-    transform 0.6s ease-out;
-}
-
-/* Classe adicionada via Intersection Observer */
-.section-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Respeita preferência por redução de movimento */
-@media (prefers-reduced-motion: reduce) {
-  .section-transition {
-    transition: opacity 0.6s ease-out !important;
-    transform: none !important;
-  }
-}
-
-/* 1. Efeito de fade lateral (esquerda para direita) */
-.section-slide-left {
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: all 0.6s ease-out;
-}
-
-/* 2. Efeito de zoom sutil */
-.section-zoom {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-}

@@ -1,10 +1,9 @@
-import BtnWhats from "../BtnWhats/BtnWhats";
-import SectionObserver from "../IntersectionObserver/IntersectionObserver";
-
+import AnimatedSection from '../../common/AnimatedSection/AnimatedSection';
+import BtnWhats from '../../common/BtnWhats/BtnWhats'
 
 const FuncionaAtendimento = () => {
     return (
-        <SectionObserver>
+        <AnimatedSection>
         <section className="flex flex-col justify-center items-center h-screen text-center" id="como-funciona-atendimento">
             <div>
                 <h2 className="font-bold text-3xl text-[#494949] pb-4">Como funciona o atendimento?</h2>
@@ -29,7 +28,7 @@ const FuncionaAtendimento = () => {
                 <BtnWhats/>
             </div>
         </section>
-    </SectionObserver>
+    </AnimatedSection>
     )
 }
 

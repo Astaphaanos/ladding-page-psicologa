@@ -1,6 +1,6 @@
 const Header = () => {
     return(
-        <header className="pt-4 h-2">
+        <header className="pt-4" >
             <nav className="flex justify-around items-center md:justify-between lg:justify-evenly xl:justify-evenly">
                 <div className="text-red-800 font-bold text-3xl md:pl-4">
                     <span>Thayse Oliveira</span>

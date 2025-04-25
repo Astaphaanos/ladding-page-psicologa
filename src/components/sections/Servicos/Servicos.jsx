@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SectionObserver from "../IntersectionObserver/IntersectionObserver";
+import AnimatedSection from '../../common/AnimatedSection/AnimatedSection';
 
 // Configurações do carrossel
 const settings = {
@@ -80,7 +80,7 @@ const servicesBanner = [
 
 const Banner = () => {
   return (
-    <SectionObserver>
+    <AnimatedSection >
     <section
       className="h-auto flex flex-col justify-center items-center"
       id="servicos-oferecidos"
@@ -131,7 +131,7 @@ const Banner = () => {
         </Slider>
       </div>
     </section>
-    </SectionObserver>
+    </AnimatedSection>
   );
 };
 

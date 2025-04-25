@@ -1,6 +1,5 @@
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import ShowMapa from "../ConsultorioLocalizacao/ShowMapa";
-import { FaFacebook } from "react-icons/fa6";
+import ShowMapa from '../../common/ConsultorioLocalizacao/ShowMapa'
 
 const Footer = () => {
   return (
@@ -23,7 +22,7 @@ const Footer = () => {
           <div className="max-w-md lg:pr-6">
             <h3 className="font-bold text-lg border-b border-white/20 pb-2 mb-4">Localização</h3>
             <div>
-              <ShowMapa />
+              <ShowMapa/>
             </div>
             <p className="mt-2 text-sm flex items-center gap-1">
                Av. Ézio Araújo, 399 - Centro
