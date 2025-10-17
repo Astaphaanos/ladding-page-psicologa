@@ -1,6 +1,6 @@
 # BusFacul
 
-*Landing Page da Psicóloga Thayse**
+*Landing Page da Psicóloga Thayse*
 
 ## Descrição
 
